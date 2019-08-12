@@ -1,13 +1,15 @@
     #include<stdio.h>
     int main()
     {
-    int n,k,j,s=0;
-    int n1,n2,n3,n4,n5;
+    int n[10],k,i,s=0;
     scanf("%d%d",&n,&k);
-    scanf("%d%d%d%d%",&n1,&n2,&n3,&n4,&n5);
-    for(j=0;j<=k;j++)
+    for(i=0;n[i]!=0;i++)
     {
-      s=n1+n2;
+      scanf("%d",&n[i]);
+    }
+    for(i=0;i<=k;i++)
+    {
+        s=s+i;
     }
     printf("%d",s);
     return 0;
